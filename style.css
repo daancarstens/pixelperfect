@@ -52,6 +52,7 @@ html, body, #myVerticalCarousel {
 .slide1__beschrijving{
   font-family: fontNormaal;
   color: black;
+  animation: fadeInTekst ease 5s;
   text-align: center;
   font-size: 1em;
 }
@@ -75,16 +76,26 @@ html, body, #myVerticalCarousel {
   position: absolute;
 }
 
+.slide1__animatie{
+  animation: fadeIn ease 3s ;
+
+}
+
 .ster1{
   padding-top: 2.5em;
+  animation: ster1 ease 1s infinite;
+
+
 }
 
 .ster2{
   padding-left: 13em;
+  animation: ster2 ease 1s infinite;
 }
 
 .ster3{
   padding-top: 11em;
+  animation: ster3 ease 1s infinite;
 }
 
 @font-face{
@@ -96,3 +107,34 @@ html, body, #myVerticalCarousel {
   font-family: fontBold;
   src: url(Bold.ttf);
 }
+
+
+@keyframes fadeInTekst {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity: 0;}
+    100% {opacity:1;}
+    }
+
+    @keyframes ster1 {
+      0% {opacity:0;}
+      50% {opacity: 0;}
+      100% {opacity:1;}
+      }
+
+    @keyframes ster2 {
+      0% {opacity:0;}
+      50% {opacity: 1;}
+      100% {opacity:0;}
+      }
+
+    @keyframes ster3 {
+      0% {opacity:0;}
+      50% {opacity: 0;}
+      75% {opacity: 1;}
+      100% {opacity:0;}
+      }
