@@ -1,0 +1,98 @@
+html, body, #myVerticalCarousel {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.slides__pijl{
+  position: fixed;
+  width: 2em;
+  height: 2em;
+  z-index: 10;
+  margin-left: 95vw;
+  margin-top: 90vh;
+  cursor: pointer;
+}
+
+.slides{
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 720px;
+}
+
+.slide1__logo{
+  z-index: 5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  padding-top: 6em;
+}
+
+.slide1__afbeelding{
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.slide1__titel{
+  font-family: fontNormaal;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  font-size: 2em;
+}
+
+.zwart{
+  font-family: fontBold;
+  color: black;
+}
+
+.slide1__beschrijving{
+  font-family: fontNormaal;
+  color: black;
+  text-align: center;
+  font-size: 1em;
+}
+
+.slide1__animatie{
+  padding-top: 1em;
+  z-index: 5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.slide1__foto{
+  position: absolute;
+  min-width: 15%;
+  max-width: 15%;
+}
+
+.ster1, .ster2, .ster3{
+  position: absolute;
+}
+
+.ster1{
+  padding-top: 2.5em;
+}
+
+.ster2{
+  padding-left: 13em;
+}
+
+.ster3{
+  padding-top: 11em;
+}
+
+@font-face{
+  font-family: fontNormaal;
+  src: url(Normaal.ttf);
+}
+
+@font-face{
+  font-family: fontBold;
+  src: url(Bold.ttf);
+}
