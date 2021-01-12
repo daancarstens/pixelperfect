@@ -1,7 +1,14 @@
 html, body, #myVerticalCarousel {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slides{
+top: 0px;
+bottom: 0px;
+width: 100%;
+height: 720px;
 }
 
 .slides__pijl{
@@ -12,244 +19,382 @@ html, body, #myVerticalCarousel {
   margin-left: 95vw;
   margin-top: 90vh;
   cursor: pointer;
-}
-
-.slides{
-  top: 0px;
-  bottom: 0px;
-  width: 100%;
-  height: 720px;
-}
+  }  
 
 .slide1__logo{
-  z-index: 5;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 15%;
-  padding-top: 6em;
+z-index: 5;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 15%;
+padding-top: 6em;
 }
 
 .slide1__afbeelding{
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+z-index: -1;
+width: 100%;
+height: 100%;
+position: absolute;
 }
 .slide1__titel{
-  font-family: fontNormaal;
-  color: white;
-  font-weight: 900;
-  text-align: center;
-  font-size: 2em;
+font-family: fontNormaal;
+color: white;
+font-weight: 900;
+text-align: center;
+font-size: 2em;
 }
 
 .zwart{
-  font-family: fontBold;
-  color: black;
+font-family: fontBold;
+color: black;
 }
 
-.slide1__beschrijving{
-  font-family: fontNormaal;
-  color: black;
-  animation: fadeInTekst ease 5s;
-  text-align: center;
-  font-size: 1em;
+.slide1__inhoud{
+font-family: fontNormaal;
+color: black;
+animation: fadeInTekst ease 5s;
+text-align: center;
+font-size: 1em;
 }
 
 .slide1__animatie{
-  padding-top: 1em;
-  z-index: 5;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 15%;
+padding-top: 1em;
+z-index: 5;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 15%;
 }
 
 .slide1__foto{
-  position: absolute;
-  min-width: 15%;
-  max-width: 15%;
+position: absolute;
+min-width: 15%;
+max-width: 15%;
+}
+
+.slide1__animatie{
+animation: fadeIn ease 3s ;
 }
 
 .ster1, .ster2, .ster3{
   position: absolute;
-}
-
-.slide1__animatie{
-  animation: fadeIn ease 3s ;
-
-}
+  }
 
 .ster1{
-  padding-top: 2.5em;
-  animation: ster1 ease 1s infinite;
-
-
+padding-top: 2.5em;
+animation: ster1 ease 1s infinite;
 }
 
 .ster2{
-  padding-left: 13em;
-  animation: ster2 ease 1s infinite;
+padding-left: 13em;
+animation: ster2 ease 1s infinite;
 }
 
 .ster3{
-  padding-top: 11em;
-  animation: ster3 ease 1s infinite;
+padding-top: 11em;
+animation: ster3 ease 1s infinite;
 }
 
 @font-face{
-  font-family: fontNormaal;
-  src: url(Normaal.ttf);
+font-family: fontNormaal;
+src: url(Normaal.ttf);
 }
 
 @font-face{
-  font-family: fontBold;
-  src: url(Bold.ttf);
+font-family: fontBold;
+src: url(Bold.ttf);
 }
 
 
 @keyframes fadeInTekst {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@keyframes fadeIn {
   0% {opacity:0;}
+  50% {opacity: 0;}
   100% {opacity:1;}
   }
-
-  @keyframes fadeIn {
+ 
+  @keyframes ster1 {
     0% {opacity:0;}
     50% {opacity: 0;}
     100% {opacity:1;}
     }
+ 
+  @keyframes ster2 {
+    0% {opacity:0;}
+    50% {opacity: 1;}
+    100% {opacity:0;}
+    }
+     
+  @keyframes ster3 {
+    0% {opacity:0;}
+    50% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity:0;}
+    }
 
-    @keyframes ster1 {
-      0% {opacity:0;}
-      50% {opacity: 0;}
-      100% {opacity:1;}
-      }
-
-    @keyframes ster2 {
+    @keyframes flits1 {
       0% {opacity:0;}
       50% {opacity: 1;}
+      75% {opacity: 0.5;}
       100% {opacity:0;}
       }
-
-    @keyframes ster3 {
+   
+      @keyframes flits2 {
+        0% {opacity:0;}
+        50% {opacity: 1;}
+        75% {opacity: 0.5;}
+        100% {opacity:0;}
+        }
+       
+    @keyframes flits3 {
       0% {opacity:0;}
-      50% {opacity: 0;}
-      75% {opacity: 1;}
+      25%{opacity: 0.5;}
+      50% {opacity: 1;}
+      75% {opacity: 0.5;}
       100% {opacity:0;}
       }
-
+       
+  
 
 .slide2__logo{
-  display: block;
-  margin-left: 38.5vw;
-  z-index: 5;
-  position: absolute;
-  padding-top: 15em;
-  width: 25%;
+display: block;
+margin-left: 38.5vw;
+z-index: 5;
+position: absolute;
+padding-top: 15em;
+width: 25%;
 }
 
-/* .slide2__afbeelding{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-  width: 14%;
-  padding-right: 3.6em;
-  padding-top: 12em;
-} */
-
 .etoile1{
-  padding-left: 40em;
-  padding-top: 14.5em;
-  width: 5%;
-  position: relative;
-  z-index: 10;
-
+padding-left: 40.2em;
+padding-top: 14.5em;
+width: 5%;
+position: relative;
+z-index: 10;
+animation: flits1 ease 2s infinite;
 
 }
 
 .etoile2{
-  z-index: 10;
-  position: relative;
-  margin-bottom: -0.4em;
-  padding-left: 8.8em;
-  width: 3.5%;
+z-index: 10;
+position: relative;
+margin-bottom: -0.4em;
+padding-left: 8.6em;
+width: 3.5%;
+animation: flits2 ease 1s infinite;
+
 }
 
 .etoile3{
-  z-index: 10;
-  position: relative;
-  margin-bottom: -10.4em;
-  margin-left: -16.2em;
-  width: 3.5%;
+z-index: 10;
+position: relative;
+margin-bottom: -10.4em;
+margin-left: -15.6em;
+width: 3.5%;
+animation: flits3 ease 3s infinite;
+
 }
 
 .vuur{
-  z-index: 1;
-  position: absolute;
-  width: 15%;
-  margin-top: 6em;
-  margin-left: 40em;
+z-index: 1;
+position: absolute;
+width: 15%;
+margin-top: 6.3em;
+margin-left: 40.3em;
 }
 
 .vogel{
-  z-index: 1;
-  position: absolute;
-  width: 9%;
-  margin-top: 9em;
-  margin-left: 58em;
+z-index: 1;
+position: absolute;
+width: 9%;
+margin-top: 9em;
+margin-left: 58em;
 }
 
 .witproject{
-  text-align: center;
-  padding-top: 7.5em;
-  font-family: fontBold;
-  color: white;
-  font-size: 30px;
+text-align: center;
+padding-top: 7.5em;
+font-family: fontBold;
+color: white;
+font-size: 30px;
 }
 
 .geelproject{
-  text-align: center;
-  margin-top: -1.5em;
-  font-family: fontNormaal;
-  color: #f3c81a;
-  font-size: 13px;
+text-align: center;
+margin-top: -1.5em;
+font-family: fontNormaal;
+color: #f3c81a;
+font-size: 13px;
 
 }
 
 .links{
-  display: block;
-  margin-left: 37.5vw;
-  z-index: 5;
-  position: absolute;
-  padding-top: 17em;
-  width: 11%;
+display: block;
+margin-left: 37.5vw;
+z-index: 5;
+position: absolute;
+padding-top: 17em;
+width: 11%;
 }
 
 .rechts{
-  display: block;
-  margin-left: 50.5vw;
-  z-index: 5;
-  position: absolute;
-  padding-top: 16em;
-  width: 11%;
+display: block;
+margin-left: 50.5vw;
+z-index: 5;
+position: absolute;
+padding-top: 16em;
+width: 11%;
 }
 
 .bruin{
-  font-family: fontBold;
-  position: absolute;
-  font-size: 30px;
-  margin-left: 18em;
-  margin-top: 18em;
-  color: #8B4513;
+font-family: fontBold;
+position: absolute;
+font-size: 30px;
+margin-left: 18em;
+color: #8B4513;
+margin-top: 9em;
 }
 
 .lichter{
-  font-family: fontNormaal;
-  position: absolute;
-  font-size: 14px;
-  margin-left: 36em;
-  margin-top: 42em;
-  color: #8B4513;
+font-family: fontNormaal;
+position: absolute;
+font-size: 14px;
+margin-left: 36em;
+margin-top: 23em;
+color: #8B4513;
 }
+
+.slide4__logo{
+display: block;
+margin-left: 31.5vw;
+z-index: 5;
+position: absolute;
+padding-top: 10em;
+width: 35%;
+}
+
+.wittekst4{
+text-align: center;
+padding-top: 4.2em;
+font-family: fontBold;
+color: white;
+font-size: 30px;
+}
+
+.geeltekst4{
+text-align: center;
+margin-top: -1.5em;
+font-family: fontNormaal;
+color: #8B4513;
+font-size: 13px;
+
+}
+
+.slide6__logo{
+display: block;
+margin-left: 36.5vw;
+z-index: 5;
+position: absolute;
+padding-top: 8em;
+width: 30%;
+}
+
+.slide6__logo1{
+display: block;
+margin-left: 43.9vw;
+z-index: 5;
+position: absolute;
+padding-top: 7.3em;
+width: 8%;
+}
+
+.witproject6{
+margin-top: -8.5em;
+text-align: center;
+position: relative;
+padding-top: 20.3em;
+font-family: fontBold;
+color: #e27023;
+font-size: 30px;
+}
+
+.geelproject6{
+text-align: center;
+margin-top: -8.5em;
+font-family: fontNormaal;
+color:#e27023;
+font-size: 13px;
+animation: duim ease 2s ;
+
+}
+
+.vlam1{
+margin-left:39.2em;
+margin-top: 10em;
+width: 4%;
+}
+
+.vlam2{
+margin-left:50.4em;
+width: 4%;
+margin-top: -49em;
+margin-bottom: 3em;
+position: relative;
+}
+
+
+.online1{
+padding-left: 33.2em;
+padding-top: 16.5em;
+width: 14%;
+position: relative;
+z-index: 10;
+animation: online ease 2s ;
+}
+
+@keyframes online {
+  0% {opacity:0;}
+  25% {opacity:0;}
+  50% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+.pijl1{
+z-index: 10;
+position: relative;
+margin-bottom: 3.9em;
+width: 3.5%;
+margin-left: -11.4em;
+animation:  pijl ease 1s infinite;
+opacity: 0;
+animation-delay: 3s;
+}
+
+@keyframes pijl {
+  0% {opacity:0;}
+  20% {opacity:1;}
+  40% {opacity:0;}
+  60% {opacity:1;}
+  80% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+.duimpie1{
+z-index: 10;
+position: relative;
+margin-bottom: 1em;
+margin-left: 9.8em;
+width: 3.5%;
+animation: duim ease 1.5s ;
+}
+
+@keyframes duim {
+  0% {opacity:0;}
+  25% {opacity:0;}
+  50% {opacity:0;}
+  100% {opacity:1;}
+  }
